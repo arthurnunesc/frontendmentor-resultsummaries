@@ -1,47 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  Your Result
-  76
-  of 100
+  <div class="score-card">
+    <div class="full-score">
+      <div class="full-score__header">
+        <h4>Your Result</h4>
+        <div class="full-score__circle">
+          <p class="full-score__main">76</p>
+          <p>of 100</p>
+        </div>
+      </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div class="full-score__description">
+        <h3>Great</h3>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
 
-  Reaction
-  80 / 100
+    <div class="score-details">
+      <h4>Summary</h4>
+      <div class="score-tag">
+        <p><span>Reaction</span> <span><b>80</b> / 100</span></p>
+      </div>
+      <div class="score-tag">
+        <p>Memory</p>
+        <p><b>92</b> / 100</p>
+      </div>
+      <div class="score-tag">
+        <p>Verbal</p>
+        <p><b>61</b> / 100</p>
+      </div>
+      <div class="score-tag">
+        <p>Visual</p>
+        <p><b>72</b> / 100</p>
+      </div>
+      <button>
+        Continue
+      </button>
+    </div>
+  </div>
 
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
